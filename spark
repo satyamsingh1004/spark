@@ -1,1 +1,14 @@
 Spark doesn’t provide storage layer
+
+RDD
+myrdd = sc.parallelize([1,2,3,4,5])
+an RDD is just mapping of actual data and partitions.
+
+Reading:
+https://cloudxlab.com/blog/spark-interview-questions/?utm_campaign=17600962042&utm_source=google&utm_medium=ppc&utm_content=&ad_group=141214320387&gclid=Cj0KCQjw8e-gBhD0ARIsAJiDsaUSLYN8SNzy8SJXfUpJC8Iq5nNO2wsL3dIBtq0XgiTB5CbfrduRKyYaAlAOEALw_wcB
+27. What is meant by Transformation? Give some examples.
+Work on the POC of number of partitions
+
+
+
+
