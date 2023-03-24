@@ -1,13 +1,28 @@
+- To Do
+map function
+
+
+----------------------------------------
 Spark doesn’t provide storage layer
 
 RDD
 myrdd = sc.parallelize([1,2,3,4,5])
 an RDD is just mapping of actual data and partitions.
 
+defaultParallelism - By default it is number of cores available to application.
+
+- Best Practices
+spark.conf.set("spark.microsoft.delta.optimizeWrite.enabled", "true")
+spark.conf.set("spark.microsoft.delta.autoCompact.enabled", "true")
+
+ref - https://learn.microsoft.com/en-us/azure/databricks/optimizations/auto-optimize
+
+
+
 Reading:
 https://cloudxlab.com/blog/spark-interview-questions/?utm_campaign=17600962042&utm_source=google&utm_medium=ppc&utm_content=&ad_group=141214320387&gclid=Cj0KCQjw8e-gBhD0ARIsAJiDsaUSLYN8SNzy8SJXfUpJC8Iq5nNO2wsL3dIBtq0XgiTB5CbfrduRKyYaAlAOEALw_wcB
 27. What is meant by Transformation? Give some examples.
-Work on the POC of number of partitions
+
 
 To Read:
 https://mkoptelov.medium.com/unit-testing-of-databricks-notebooks-54c95631125c
