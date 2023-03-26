@@ -26,6 +26,7 @@ reduce() – executes the function passed again and again until only one value i
 pyspark.Accumulator - A shared variable that can be accumulated, 
 
 - Best Practices/ Optimizations
+spark.conf.set('spark.sql.adaptive.enabled','true')
 spark.conf.set("spark.microsoft.delta.optimizeWrite.enabled", "true")
 spark.conf.set("spark.microsoft.delta.autoCompact.enabled", "true")
 minimize data transfer/shuffling
